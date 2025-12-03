@@ -169,7 +169,7 @@ $roleName = $roleNames[$userRole] ?? $userRole;
                                 Visualize emails gerados e envie para o Dynamics 365.
                                 Acompanhe campanhas e gerencie envios.
                             </p>
-                            <a href="visualizar.php" class="btn btn-primary btn-action">
+                            <a href="listar-emails.php" class="btn btn-primary btn-action">
                                 <i class="bi bi-eye me-2"></i>
                                 Visualizar Emails
                             </a>
