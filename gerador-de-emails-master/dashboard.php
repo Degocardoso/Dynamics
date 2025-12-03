@@ -25,14 +25,14 @@ $roleName = $roleNames[$userRole] ?? $userRole;
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         :root {
-            --primary-color: #667eea;
-            --secondary-color: #764ba2;
+            --primary-color: #1aa97f;
+            --secondary-color: #1cd09b;
         }
         body {
-            background: #f8f9fa;
+            background: #f4f7f6;
         }
         .navbar {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .navbar-brand {
@@ -64,16 +64,16 @@ $roleName = $roleNames[$userRole] ?? $userRole;
             margin-bottom: 20px;
         }
         .card-gerador {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(90deg, #1aa97f, #1cd09b);
         }
         .card-report {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(90deg, #FFDC48, #ffd700);
         }
         .card-admin {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(90deg, #795DED, #9575ff);
         }
         .welcome-card {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
             color: white;
             margin-bottom: 30px;
         }
@@ -169,7 +169,7 @@ $roleName = $roleNames[$userRole] ?? $userRole;
                                 Visualize emails gerados e envie para o Dynamics 365.
                                 Acompanhe campanhas e gerencie envios.
                             </p>
-                            <a href="visualizar.php" class="btn btn-primary btn-action">
+                            <a href="listar-emails.php" class="btn btn-primary btn-action">
                                 <i class="bi bi-eye me-2"></i>
                                 Visualizar Emails
                             </a>

@@ -76,14 +76,14 @@ $roleNames = [
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         :root {
-            --primary-color: #667eea;
-            --secondary-color: #764ba2;
+            --primary-color: #1aa97f;
+            --secondary-color: #1cd09b;
         }
         body {
-            background: #f8f9fa;
+            background: #f4f7f6;
         }
         .navbar {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .navbar-brand {
@@ -106,7 +106,7 @@ $roleNames = [
             border-radius: 20px;
         }
         .modal-header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
             color: white;
         }
     </style>
