@@ -1,3 +1,9 @@
+<?php
+require_once __DIR__ . '/auth/session.php';
+
+// Requer permissão para acessar relatórios (admin ou report)
+Auth::requireRole(['admin', 'report']);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -30,7 +36,7 @@
 
         .email-frame {
             width: 100%;
-            height: calc(100vh - 80px);
+            height: calc(100vh - 136px);
             border: none;
         }
 
@@ -65,6 +71,24 @@
         die('<div style="text-align: center; padding: 50px; font-family: sans-serif;"><h1>Erro 404</h1><p>O arquivo de e-mail não foi encontrado no servidor.</p></div>');
     }
     ?>
+
+    <!-- User Navigation Bar -->
+    <nav class="navbar navbar-light bg-white border-bottom mb-0">
+        <div class="container-fluid">
+            <span class="navbar-text">
+                <i class="bi bi-person-circle me-1"></i>
+                <?= htmlspecialchars(Auth::name()) ?>
+            </span>
+            <div>
+                <a href="dashboard.php" class="btn btn-sm btn-outline-primary me-2">
+                    <i class="bi bi-arrow-left"></i> Dashboard
+                </a>
+                <a href="logout.php" class="btn btn-sm btn-outline-danger">
+                    <i class="bi bi-box-arrow-right"></i> Sair
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <div class="control-panel">
         <div id="initial-view">
