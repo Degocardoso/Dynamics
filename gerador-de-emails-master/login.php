@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1aa97f 0%, #1cd09b 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             width: 100%;
         }
         .login-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(90deg, #1aa97f, #1cd09b);
             color: white;
             padding: 30px;
             text-align: center;
@@ -64,19 +64,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             padding: 30px;
         }
         .form-control:focus {
-            border-color: #667eea;
-            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+            border-color: #1aa97f;
+            box-shadow: 0 0 0 0.2rem rgba(26, 169, 127, 0.25);
         }
         .btn-login {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(90deg, #1aa97f, #1cd09b);
             border: none;
             padding: 12px;
             font-weight: 600;
             transition: transform 0.2s;
         }
         .btn-login:hover {
+            background: #168a68;
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 5px 15px rgba(26, 169, 127, 0.4);
         }
         .input-group-text {
             background: white;
