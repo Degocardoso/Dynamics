@@ -1,3 +1,9 @@
+<?php
+require_once __DIR__ . '/auth/session.php';
+
+// Requer permissão para gerar emails (admin ou gerador)
+Auth::requireRole(['admin', 'gerador']);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -41,7 +47,18 @@
         <form id="criaemail" method="post" action="core/geraEmail.php">
             
             <header class="header-gradient">
-                <h1 class="display-6">Gerador de Emails v3.0</h1>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h1 class="display-6 mb-0">Gerador de Emails v3.0</h1>
+                    <div>
+                        <span class="me-3"><i class="bi bi-person-circle me-1"></i><?= htmlspecialchars(Auth::name()) ?></span>
+                        <a href="dashboard.php" class="btn btn-sm btn-outline-light me-2">
+                            <i class="bi bi-arrow-left"></i> Dashboard
+                        </a>
+                        <a href="logout.php" class="btn btn-sm btn-outline-light">
+                            <i class="bi bi-box-arrow-right"></i> Sair
+                        </a>
+                    </div>
+                </div>
                 <p class="lead mb-4">Crie e configure seus e-mails de forma rápida e profissional.</p>
                 <div class="btn-actions">
                     <button type="submit" class="btn btn-gerar"><i class="bi bi-envelope-check-fill"></i> Gerar Email Agora!</button>
